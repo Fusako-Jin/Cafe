@@ -1,0 +1,8 @@
+@charset "utf-8";
+/*スマートフォン向けCSS*/
+@media (max-width:767px) {
+/* about.html - 画像のパディングを調整 */
+    .shop-photo {
+        padding-right: 0;
+    }
+}/*767*/

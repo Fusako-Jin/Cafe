@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*すべてのWebページに適用 -ナビゲーション- */
+.nav {
+    width: 100%;
+    max-width: 960px;
+    display:flex;
+    margin: 0;
+    padding: 20px 0 15px;
+    background-image: url(../images/menu-bg.png);
+    background-repeat: repeat-x;
+}
+.nav li {
+    width: 20%;
+    text-align: center;
+    list-style-type: none;
+    }
+.nav_items a {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background: #F0CC93;
+    text-decoration: none;
+    border-right: 2px dotted #fff;
+    color: brown;
+    transition: .8s;
+}
+.nav a:link {
+    color: #3c454d;
+ }
+.nav a:visited {
+    color: #3c454d;
+}
+.nav a:hover {
+    color: #7b8dac;
+}
+.nav a:active {
+    color:#5a9bc0;
+}
+.nav_items:last-child a {
+    /* 「:last-child」は兄弟要素の最後の子 */
+    border-right: none;
+}
+.nav_items a:hover {
+    color: #fff;
+    background: chocolate;
+}
+.nav_items a:active {
+    color:#5a9bc0;
+}
+#btn_open {
+    display: none;
+}
+ /* 「:nth-child(n)」は兄弟要素のn番目の子 */
+/*.nav_items:nth-child(3) a {
+    text-decoration: underline wavy;
+}*/

@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*スマートフォン向けCSS*/
+@media (max-width:767px) {
+     /* menu.html -横並びの解除*/
+    .menu-item {
+        display: block;
+        /*flex-direction: column;*/
+    }
+    .menu-photo {
+        margin-right: 0;
+        width: 100%;
+    }
+    .menu-text {
+        width: 100%;
+    }
+}/*767*/

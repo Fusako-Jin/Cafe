@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*すべてのWebページに適用される*/
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+html * {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #eeece9;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+h2 {
+    color: #3f5170;
+    font-size: 22px;
+    border-bottom: 3px dotted #3f5170;
+    margin: 20px 0;/*一括指定（ショートハンド）上下 左右*/
+    /*margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;*/
+    padding: 5px;/*一括指定（ショートハンド）四辺*/
+    /*padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;*/
+}
+p {
+    line-height: 1.6;
+}
+a:link {
+    color: #d25833;
+}
+a:visited {
+    color: #d25833;
+}
+a:hover {
+    color: #e3937a;
+}
+a:active {
+    color:#ff6a3b;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* すべてのページに適用 - ヘッダー - */
+.logo {
+    margin: 50px 0 40px;/*一括指定 上 左右 下*/
+    line-height: 0;
+    text-align: center;
+}
+
+/* すべてのページに適用 - フッター - */
+.footer{
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    padding: 80px 15px 20px 15px;
+    font-size: 12px;
+    color: #3f5170;
+}

@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*スマートフォン向けCSS*/
+@media (max-width:767px) {
+    /* 全体 - ナビゲーション */
+    .nav {
+        background-color: transparent;
+        background-image: none;
+        display: block;
+    }
+    .btn_menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #777;
+        border-radius: 5px;
+        z-index: 100;
+    }
+    .btn_menu span {
+        width: 60%;
+        height: 4px;
+        display: block;
+        position: absolute;
+        left: 20%;
+        background: #fff;
+        border-radius: 5px;
+        transition: all .2s linear;
+    }
+    .btn_menu span:nth-of-type(1){
+        top: 10px;
+        transform: rotate(0);
+    }
+     .btn_menu span:nth-of-type(2){
+        top: 18px;
+        transform: scale(1);
+    }
+     .btn_menu span:nth-of-type(3){
+        bottom: 10px;
+        transform: rotate(0);
+    }
+    #btn_open:checked + label span:nth-of-type(1){
+        top: 18px;
+        transform: rotate(-45deg);
+    }
+    #btn_open:checked + label span:nth-of-type(2){
+        transform: scale(0);
+    }
+    #btn_open:checked + label span:nth-of-type(3){
+        bottom: 18px;
+        transform: rotate(45deg);
+    }
+    .btn_menu {
+        cursor: pointer;
+    }
+    #gnav {
+        width: 100%;
+        padding: 52px 0 20px;
+        background: rgba(240, 204, 147, .5);
+        overflow: hidden;
+        position: fixed;
+        top: -100%;
+        left: 0%;
+        transition: left .5s, right .5s, top .5s, bottom .5s;
+        z-index: 10;
+    }
+    #gnav .navList{
+        display: block;
+        margin: 0;
+        padding-left: 0;
+    }
+    #gnav a{
+        color: #fff;
+        text-decoration: none;
+    }
+    #btn_open:checked ~ #gnav {
+        top: 0;
+    }
+    #gnav .nav_items {
+        width: 100%;
+        line-height: 1.5;
+    }
+    .nav_items a {
+        color: #fff;
+        border-right: none;
+        border-bottom: 2px dotted #fff;
+    }
+    .nav_items:last-child a {
+        border-bottom: none;
+    }
+    
+}/*767*/
+
+
+
+
+
+
+
+
+
+
+
+
+
